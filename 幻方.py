@@ -29,7 +29,7 @@ class magic_square(Scene):
             self.remove(blue_square)
             self.wait(0.5)
 
-    # 显示的状态以及提交动作
+    # 需要显示的状态和动作的信息
     def status_action(self,pos,status,action):
         t = Text(f"状态：{status} ，动作：{action}", font_size=20).move_to(pos)
         self.add(t)
